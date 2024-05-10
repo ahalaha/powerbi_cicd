@@ -1,0 +1,96 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15e6f082708928d75a06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":421.0526315789474,\"z\":5000,\"width\":640,\"height\":300.0956937799043,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y2\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\"}],\"Y\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.avg_transaction_per_user\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"transaction_date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"transaction_date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"transaction_date Day\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"avg_volume_per_user\"},\"Name\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\",\"NativeReferenceName\":\"avg_volume_per_user\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"avg_transaction_per_user\"},\"Name\":\"public view_ng_site_offramp_transaction.avg_transaction_per_user\",\"NativeReferenceName\":\"avg_transaction_per_user\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}},\"selector\":{\"metadata\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\"}}],\"legend\":[{\"properties\":{\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineAndMarker'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Daily average volume and transaction per offramp user'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.10,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 421.05,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"319e5a03e3bbd2cb9679\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":120.95693779904308,\"z\":0,\"width\":640,\"height\":300.0956937799043,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(public view_ng_site_offramp_transaction.user_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"transaction_date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"transaction_date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"transaction_date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"user_id\"}},\"Function\":2},\"Name\":\"Sum(public view_ng_site_offramp_transaction.user_id)\",\"NativeReferenceName\":\"Count of user_id\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of offramp customer over time'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.10,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 120.96,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"75f88afae29e864a00f9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":223.54066985645935,\"height\":93.39712918660288,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"transaction_date\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date\",\"NativeReferenceName\":\"transaction_date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"transaction_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-02-07T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-04-16T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"transaction_date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-02-07T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"transaction_date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-04-17T00:00:00'\"}}}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 93.40,
+          "width": 223.54,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"78e2a5a22b86461546fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":120.95693779904308,\"z\":1000,\"width\":640,\"height\":300.0956937799043,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(public view_ng_site_offramp_transaction.fiat_amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"transaction_date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"transaction_date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"transaction_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"transaction_date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"fiat_amount\"}},\"Function\":0},\"Name\":\"Sum(public view_ng_site_offramp_transaction.fiat_amount)\",\"NativeReferenceName\":\"Sum of fiat_amount\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Offramp value over time'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.10,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 120.96,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"bc81e7a89dddeed9d600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1028.8995215311006,\"y\":0,\"z\":4000,\"width\":251.10047846889955,\"height\":120.95693779904308,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(public view_ng_site_offramp_transaction.fiat_amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"fiat_amount\"}},\"Function\":0},\"Name\":\"Sum(public view_ng_site_offramp_transaction.fiat_amount)\",\"NativeReferenceName\":\"Total offramp amount in USD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"fiat_amount\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(public view_ng_site_offramp_transaction.fiat_amount)\":{\"displayName\":\"Total offramp amount in USD\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 120.96,
+          "width": 251.10,
+          "x": 1028.90,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"cf1fec629991be9e8382\",\"layouts\":[{\"id\":0,\"position\":{\"x\":388.8995215311005,\"y\":0,\"z\":3000,\"width\":251.10047846889955,\"height\":120.95693779904308,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(public view_ng_site_offramp_transaction.user_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"user_id\"}},\"Function\":2},\"Name\":\"Sum(public view_ng_site_offramp_transaction.user_id)\",\"NativeReferenceName\":\"Number of offramp customer\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"user_id\"}},\"Function\":2}}}]},\"columnProperties\":{\"Sum(public view_ng_site_offramp_transaction.user_id)\":{\"displayName\":\"Number of offramp customer\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"altText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.96,
+          "width": 251.10,
+          "x": 388.90,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f8604479fb9e3e861e44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":421.0526315789474,\"z\":6000,\"width\":640,\"height\":298.5645933014354,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Y2\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\"}],\"Y\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.avg_transaction_per_user\"}],\"Category\":[{\"queryRef\":\"public view_ng_site_offramp_transaction.transaction_week_number\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public view_ng_site_offramp_transaction\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"avg_volume_per_user\"},\"Name\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\",\"NativeReferenceName\":\"avg_volume_per_user\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"avg_transaction_per_user\"},\"Name\":\"public view_ng_site_offramp_transaction.avg_transaction_per_user\",\"NativeReferenceName\":\"avg_transaction_per_user\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"transaction_week_number\"},\"Name\":\"public view_ng_site_offramp_transaction.transaction_week_number\",\"NativeReferenceName\":\"transaction_week_number\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"avg_transaction_per_user\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}},\"selector\":{\"metadata\":\"public view_ng_site_offramp_transaction.avg_volume_per_user\"}}],\"legend\":[{\"properties\":{\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineAndMarker'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekyly average volume and transaction per offramp user'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 298.56,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 421.05,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
